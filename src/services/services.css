@@ -9,7 +9,7 @@
   
 }
 .services{
-  margin-top: 90px;
+  margin-top: 25px;
 }
 
 .service__item span i {
@@ -46,12 +46,18 @@
     padding: 10px;
     margin-bottom: 1.5rem;
   }
+  .services{
+    margin-top: 35px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .service__item span i {
     font-size: 1.5rem;
     padding: 5px;
+  }
+  .services{
+    margin-top: 85px;
   }
 }
 
