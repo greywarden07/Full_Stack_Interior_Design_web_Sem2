@@ -14,7 +14,7 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('/house.gltf')
   return (
     <group {...props} dispose={null}>
-      <group scale={0.0021}>
+      <group scale={0.0034}>
         <group rotation={[-Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes['house_Material_#27_0'].geometry} material={materials.Material_27} position={[-384.199, 66.043, -650]} />
         </group>

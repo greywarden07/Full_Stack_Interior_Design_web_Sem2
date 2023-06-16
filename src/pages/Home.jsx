@@ -113,7 +113,7 @@ const Home = () => {
 
             <Col lg="6" md="6">
               <Canvas className="hero__img">
-                <OrbitControls enableZoom={true} />
+                <OrbitControls enableZoom={false} />
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[-2, 5, 2]} intensity={1} />
 
