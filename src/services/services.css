@@ -3,10 +3,13 @@
 
   display: flex;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: 0.7rem;
   border-radius: 5px;
   cursor: pointer;
   
+}
+.services{
+  margin-top: 90px;
 }
 
 .service__item span i {

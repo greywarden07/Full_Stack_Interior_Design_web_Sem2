@@ -26,11 +26,14 @@ export default function HeroBackground() {
 const Wrapper = styled.div`
   position: absolute;
   width: 100%;
-  height: 470px;
+  height: 570px;
   background: linear-gradient(180deg, #322d6d 6.33%, #663182 39.13%);
   text-align: center;
   overflow: hidden;
   z-index: -1;
+  @media only screen and (max-width: 768px) {
+    height: 900px;
+  }
 `;
 
 const Wave = styled.div`
