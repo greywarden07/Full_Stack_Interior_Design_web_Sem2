@@ -1,6 +1,4 @@
-.hero__section {
-  background: var(--hero-bg);
-}
+
 
 .hero__content h2 {
   color: var(--primary-color);
@@ -15,7 +13,7 @@
 }
 
 .hero__section p:nth-child(1) {
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .buy__btn {

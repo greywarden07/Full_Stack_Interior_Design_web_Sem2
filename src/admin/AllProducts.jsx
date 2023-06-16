@@ -4,7 +4,7 @@ import { db } from "../firebase.config";
 import { doc, deleteDoc } from "firebase/firestore";
 import useGetData from "../custom-hooks/useGetData";
 import { toast } from "react-toastify";
-import "../styles/all-products.css";
+
 
 const AllProducts = () => {
   const { data: productsData, loading } = useGetData("products");
