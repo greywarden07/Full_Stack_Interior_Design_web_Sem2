@@ -13,7 +13,7 @@ import ProductsList from "../components/UI/ProductsList";
 import Clock from "../components/UI/Clock";
 import counterImg from "../assets/images/counter-timer-img.png";
 
-import Background from "./Background";
+import Background from "../components/Background";
 
 import styled from "styled-components";
 
