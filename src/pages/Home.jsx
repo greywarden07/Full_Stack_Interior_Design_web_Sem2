@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -14,11 +14,15 @@ import Clock from "../components/UI/Clock";
 import counterImg from "../assets/images/counter-timer-img.png";
 
 import Background from "../components/Background";
+import House from "../components/House";
 
 import styled from "styled-components";
 
+import { Canvas } from "@react-three/fiber";
+
 
 import useGetData from "../custom-hooks/useGetData";
+import { OrbitControls } from "@react-three/drei";
 
 const Home = () => {
 
@@ -90,10 +94,12 @@ const Home = () => {
     <Background />
     
   </Wrapper>
+  
       <section className="hero__section" >
       
         
         <Container>
+            
           
           <Row>
             <Col lg="6" md="6">
@@ -115,12 +121,16 @@ const Home = () => {
             </Col>
 
             <Col lg="6" md="6">
-              <div className="hero__img">
-             
-             
-              
-              
-              </div>
+            <Canvas >
+                <OrbitControls enableZoom={true} />
+                <ambientLight intensity={0.5} />
+                <directionalLight position={[-2, 5, 2]} intensity={1} />
+                
+                <Suspense fallback={null}>
+                  <House />
+                </Suspense>
+
+               </Canvas>
             </Col>
           </Row>
         </Container>
