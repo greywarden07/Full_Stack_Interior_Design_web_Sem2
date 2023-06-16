@@ -82,6 +82,7 @@ const Header = () => {
   return (
     <header className="header" ref={headerRef}>
       <Container>
+        
         <Row>
           <div className="nav__wrapper">
             <div className="logo">
@@ -93,6 +94,7 @@ const Header = () => {
 
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
               <motion.ul className="menu">
+               
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
                     <NavLink
@@ -153,9 +155,12 @@ const Header = () => {
               </div>
               <div className="mobile__menu">
                 <span onClick={menuToggle}>
+                  
                   <i class="ri-menu-line"></i>
                 </span>
+               
               </div>
+              
             </div>
           </div>
         </Row>

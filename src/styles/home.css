@@ -38,12 +38,13 @@
 
 .timer__count {
   background: var(--primary-color);
-  height: 300px;
+  height: 400px;
+  margin-top: 3cm;
 }
 
 .timer__count img {
-  width: 70% !important;
-  height: 70% !important;
+  width: 10% !important;
+  height: 10% !important;
   object-fit: contain;
 }
 
@@ -55,12 +56,22 @@
 
 .store__btn a:hover {
   color: var(--primary-color);
+
 }
+.Anime{
+  
+  
+  margin-left: 190px;
+  
+}
+
+
 
 @media only screen and (max-width: 992px) {
   .hero__content h2 {
     font-size: 2rem;
   }
+  
 
   .section__title {
     font-size: 1.7rem;

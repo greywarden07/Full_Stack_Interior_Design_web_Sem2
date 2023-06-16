@@ -23,6 +23,10 @@ import { Canvas } from "@react-three/fiber";
 import useGetData from "../custom-hooks/useGetData";
 import { OrbitControls } from "@react-three/drei";
 
+import Lottie from "lottie-react";
+import InteriorAnime from "../assets/InteriorAnime.json";
+
+
 const Home = () => {
   const modelRef = React.useRef();
   const [annots, setAnnots] = useState([]);
@@ -175,10 +179,16 @@ const Home = () => {
               >
                 <Link to="/shop">Visit Store</Link>
               </motion.button>
+              
             </Col>
 
             <Col lg="6" md="12" className="text-end counter__img">
-              <img src={counterImg} alt="" />
+              <div className="Anime" >
+            <Lottie animationData={InteriorAnime} />
+
+              </div>
+            
+              
             </Col>
           </Row>
         </Container>
