@@ -20,12 +20,10 @@ import styled from "styled-components";
 
 import { Canvas } from "@react-three/fiber";
 
-
 import useGetData from "../custom-hooks/useGetData";
 import { OrbitControls } from "@react-three/drei";
 
 const Home = () => {
-
   const modelRef = React.useRef();
   const [annots, setAnnots] = useState([]);
 
@@ -50,7 +48,6 @@ const Home = () => {
     return `${annot.normal.x} ${annot.normal.y} ${annot.normal.z}`;
   };
 
-
   const { data: products, loading } = useGetData("products");
 
   const [trendingProducts, setTrendingProducts] = useState([]);
@@ -63,23 +60,23 @@ const Home = () => {
 
   useEffect(() => {
     const filteredTrendingProducts = products.filter(
-      item => item.category === "chair"
+      (item) => item.category === "chair"
     );
 
     const filteredBestSalesProducts = products.filter(
-      item => item.category === "sofa"
+      (item) => item.category === "sofa"
     );
 
     const filteredMobileProducts = products.filter(
-      item => item.category === "mobile"
+      (item) => item.category === "mobile"
     );
 
     const filteredWirelessProducts = products.filter(
-      item => item.category === "wireless"
+      (item) => item.category === "wireless"
     );
 
     const filteredPopularProducts = products.filter(
-      item => item.category === "watch"
+      (item) => item.category === "watch"
     );
 
     setTrendingProducts(filteredTrendingProducts);
@@ -90,20 +87,15 @@ const Home = () => {
   }, [products]);
 
   return (
-    <Helmet title={"Home"}><Wrapper>
-    <Background />
-    
-  </Wrapper>
-  
-      <section className="hero__section" >
-      
-        
+    <Helmet title={"Home"}>
+      <Wrapper>
+        <Background />
+      </Wrapper>
+
+      <section className="hero__section">
         <Container>
-            
-          
           <Row>
             <Col lg="6" md="6">
-              
               <div className="hero__content">
                 <p className="hero__subtitle">Trending product in {year}</p>
                 <h2>Make Your Interior More Minimalistic & Modern </h2>
@@ -113,24 +105,22 @@ const Home = () => {
                   nesciunt rem fugit!
                 </p>
 
-                <motion.button whileTap={{ scale: 1.2}} className="buy__btn">
+                <motion.button whileTap={{ scale: 1.2 }} className="buy__btn">
                   <Link to="/shop">SHOP NOW</Link>
                 </motion.button>
-                
               </div>
             </Col>
 
             <Col lg="6" md="6">
-            <Canvas className="hero__img">
+              <Canvas className="hero__img">
                 <OrbitControls enableZoom={true} />
                 <ambientLight intensity={0.5} />
                 <directionalLight position={[-2, 5, 2]} intensity={1} />
-                
+
                 <Suspense fallback={null}>
                   <House />
                 </Suspense>
-
-               </Canvas>
+              </Canvas>
             </Col>
           </Row>
         </Container>

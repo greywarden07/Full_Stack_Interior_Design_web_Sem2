@@ -14,8 +14,10 @@ const Shop = () => {
  
 
   return (
+
     <Helmet title="Shop">
       <CommonSection title="Products" />
+      
 
       <section>
         <Container>
