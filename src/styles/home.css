@@ -134,4 +134,9 @@
     padding-top: 0;
     margin-bottom: 40px;
   }
+  .dBox{
+    display:flex;
+    height: 11cm;
+  
+  }
 }
