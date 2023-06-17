@@ -11,10 +11,11 @@ import { Container, Row, Col } from "reactstrap";
 import Services from "../services/Services";
 import ProductsList from "../components/UI/ProductsList";
 import Clock from "../components/UI/Clock";
-import counterImg from "../assets/images/counter-timer-img.png";
+
 
 import Background from "../components/Background";
 import House from "../components/House";
+import Couch from "../components/Couch";
 
 import styled from "styled-components";
 
@@ -168,8 +169,8 @@ const Home = () => {
           <Row>
             <Col lg="6" md="12" className="count__down-col">
               <div className="clock__top-content">
-                <h4 className="text-white fs-6 mb-2">Limited Offers</h4>
-                <h3 className="text-white fs-5 mb-3">Quality Armchair</h3>
+                <h4 className="text-black fs-6 mb-2">Limited Offers</h4>
+                <h3 className="text-black fs-5 mb-3">Quality Armchair</h3>
               </div>
               <Clock />
 
@@ -183,10 +184,19 @@ const Home = () => {
             </Col>
 
             <Col lg="6" md="12" className="text-end counter__img">
-              <div className="Anime" >
-            <Lottie animationData={InteriorAnime} />
+              
+            {/* <Lottie animationData={InteriorAnime} /> */}
+            <Canvas>
+                <OrbitControls enableZoom={false} />
+                <ambientLight intensity={0.5} />
+                <directionalLight position={[-2, 5, 2]} intensity={1} />
 
-              </div>
+                <Suspense fallback={null}>
+                  <Couch />
+                </Suspense>
+              </Canvas>
+
+              
             
               
             </Col>

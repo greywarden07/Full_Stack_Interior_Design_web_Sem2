@@ -82,14 +82,14 @@ const Footer = () => {
                   <span>
                     <i class="ri-map-pin-line"></i>
                   </span>
-                  <p>123 ZindaBazar, Sylhet, Bangladesh</p>
+                  <p>Indian Institute of Information Technology, Lucknow</p>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">
                   <span>
                     <i class="ri-phone-line"></i>
                   </span>
-                  <p>+0881234567890</p>
+                  <p>+91-1234567890</p>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-2">

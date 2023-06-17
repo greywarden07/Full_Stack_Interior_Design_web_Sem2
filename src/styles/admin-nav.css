@@ -49,6 +49,7 @@
   height: 70px;
   line-height: 70px;
   background: var(--card-bg-02);
+  background-image: url("../assets/images/NewHead.png");
 }
 
 .admin__navigation {
@@ -60,11 +61,12 @@
   align-items: center;
   column-gap: 2.7rem;
   justify-content: center;
+  
 }
 
 .admin__menu-list .admin__menu-item a {
   color: var(--primary-color);
-  font-weight: 500;
+  font-weight: 600;
 
   padding: 10px 15px;
   border-radius: 5px;

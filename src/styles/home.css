@@ -37,15 +37,21 @@
 }
 
 .timer__count {
-  background: var(--primary-color);
+  background-image: url("../assets/images/light-space-1560788.jpg");
   height: 400px;
   margin-top: 3cm;
+  background-size: cover;
 }
 
 .timer__count img {
   width: 10% !important;
   height: 10% !important;
   object-fit: contain;
+  
+}
+.counter__img{
+  display: flex;
+  height: 9cm;
 }
 
 .store__btn {

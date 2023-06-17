@@ -3,6 +3,7 @@
   height: 70px;
   line-height: 70px;
   background-color: #DDE6ED ;
+  
 }
 
 .nav__wrapper {
@@ -148,7 +149,7 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background: #DDE6ED;
+    background-image: url("NewHeader.png");
     z-index: 99999;
     flex-direction: column;
     align-items: center;
