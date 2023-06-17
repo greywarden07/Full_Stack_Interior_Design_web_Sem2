@@ -116,7 +116,7 @@ const Home = () => {
               </div>
             </Col>
 
-            <Col lg="6" md="6">
+            <Col lg="6" md="6" className="dBox">
               <Canvas className="hero__img">
                 <OrbitControls enableZoom={false} />
                 <ambientLight intensity={0.5} />

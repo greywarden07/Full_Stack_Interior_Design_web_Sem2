@@ -10,7 +10,8 @@
 
 .common__section h1 {
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
+  font-size: 50px;
 }
 
 @media only screen and (max-width: 768px) {
