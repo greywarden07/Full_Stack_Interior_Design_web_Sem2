@@ -24,8 +24,8 @@ import { Canvas } from "@react-three/fiber";
 import useGetData from "../custom-hooks/useGetData";
 import { OrbitControls } from "@react-three/drei";
 
-import Lottie from "lottie-react";
-import InteriorAnime from "../assets/InteriorAnime.json";
+// import Lottie from "lottie-react";
+// import InteriorAnime from "../assets/InteriorAnime.json";
 
 
 const Home = () => {
