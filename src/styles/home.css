@@ -36,6 +36,11 @@
   padding-top: 45px;
 }
 
+
+.section__title{
+  margin-bottom: 80px;
+}
+
 .timer__count {
   background-image: url("../assets/images/light-space-1560788.jpg");
   height: 400px;

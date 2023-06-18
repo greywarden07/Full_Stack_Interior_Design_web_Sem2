@@ -1,6 +1,9 @@
 .product__details {
   margin-top: 70px;
 }
+.pt{
+  margin-top: 10px;
+}
 
 .product__details h2 {
   font-size: 1.6rem;

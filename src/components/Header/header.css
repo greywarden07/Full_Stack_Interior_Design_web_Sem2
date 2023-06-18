@@ -129,6 +129,7 @@
   z-index: 999;
   box-shadow: 3px 3px 8px -3px #DDE6ED;
   background: #DDE6ED;
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,11 +150,17 @@
     right: 0;
     width: 250px;
     height: 100%;
-    background-image: url("NewHeader.png");
+    background-image: url("pexels-karolina-grabowska-4207709.jpg");
+    background-size: cover;
+    background-position: center;
+   
     z-index: 99999;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    
+    
   }
 
   .active__menu {

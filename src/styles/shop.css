@@ -13,7 +13,10 @@
 
 .filter__widget select option {
   font-size: 0.9rem;
+  
 }
+
+
 
 .search__box {
   width: 100%;
@@ -38,13 +41,28 @@
   color: var(--primary-color);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
   .filter__widget {
+    display: flex;
     margin-bottom: 30px;
   }
 
   .filter__widget select {
     padding: 7px 20px;
     font-size: 0.9rem;
+    
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .filter__widget {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .filter__widget select {
+    padding: 7px 20px;
+    font-size: 0.9rem;
+    
   }
 }

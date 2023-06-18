@@ -48,7 +48,7 @@ const ProductDetails = () => {
     productName,
     price,
     // avgRating,
-    // reviews,
+    reviews,
     description,
     shortDesc,
     category,
@@ -93,7 +93,7 @@ const ProductDetails = () => {
     <Helmet title={productName}>
       <CommonSection title={productName} />
 
-      <section className="pt-0">
+      <section className="pt">
         <Container>
           <Row>
             <Col lg="6">
@@ -126,7 +126,7 @@ const ProductDetails = () => {
                 </div>
 
                 <div className="d-flex align-items-center gap-5">
-                  <span className="product__price">${price}</span>
+                  <span className="product__price">Rs {price}</span>
                   <span>Category: {category}</span>
                 </div>
                 <p className="mt-3">{shortDesc}</p>
@@ -170,7 +170,7 @@ const ProductDetails = () => {
               ) : (
                 <div className="product__review mt-5">
                   <div className="review__wrapper">
-                    {/* <ul>
+                    <ul>
                       {reviews?.map((item, index) => (
                         <li kew={index} className="mb-4">
                           <h6>Jhon Doe</h6>
@@ -178,7 +178,7 @@ const ProductDetails = () => {
                           <p>{item.text}</p>
                         </li>
                       ))}
-                    </ul> */}
+                    </ul>
 
                     <div className="review__form">
                       <h4>Leave your experience</h4>

@@ -28,7 +28,7 @@ const Footer = () => {
               <h4 className="quick__links-title">Top Categories</h4>
               <ListGroup>
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Mobile Phones</Link>
+                  <Link to="#">Lamp</Link>
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">
@@ -40,7 +40,7 @@ const Footer = () => {
                 </ListGroupItem>
 
                 <ListGroupItem className="ps-0 border-0">
-                  <Link to="#">Smart Watches</Link>
+                  <Link to="#">Flower Vase</Link>
                 </ListGroupItem>
               </ListGroup>
             </div>

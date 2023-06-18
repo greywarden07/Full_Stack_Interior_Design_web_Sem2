@@ -25,10 +25,10 @@ const Shop = () => {
                 <select>
                   <option>Filter By Category</option>
                   <option value="sofa">Sofa</option>
-                  <option value="mobile">Mobile</option>
+                  <option value="Vase">Flower Vase</option>
                   <option value="chair">Chair</option>
-                  <option value="watch">Watch</option>
-                  <option value="wireless">Wireless</option>
+                  <option value="Lamp">Lamp</option>
+                
                 </select>
               </div>
             </Col>

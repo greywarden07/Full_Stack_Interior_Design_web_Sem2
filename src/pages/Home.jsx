@@ -73,7 +73,7 @@ const Home = () => {
     );
 
     const filteredMobileProducts = products.filter(
-      (item) => item.category === "mobile"
+      (item) => item.category === "Vase"
     );
 
     const filteredWirelessProducts = products.filter(
@@ -81,7 +81,7 @@ const Home = () => {
     );
 
     const filteredPopularProducts = products.filter(
-      (item) => item.category === "watch"
+      (item) => item.category === "Lamp"
     );
 
     setTrendingProducts(filteredTrendingProducts);

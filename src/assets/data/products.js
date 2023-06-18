@@ -19,10 +19,10 @@ import productImg16 from "../images/phone-04.jpg";
 import productImg17 from "../images/phone-05.jpg";
 import productImg18 from "../images/phone-06.jpg";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg19 from "../images/Lamp-01.jpg";
+import productImg20 from "../images/Lamp-02.jpg";
+import productImg21 from "../images/Lamp-03.jpg";
+import productImg22 from "../images/Lamp-04.jpg";
 
 import productImg23 from "../images/wireless-01.png";
 
@@ -436,9 +436,9 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Rolex Lamp",
     imgUrl: productImg19,
-    category: "watch",
+    category: "Lamp",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -459,9 +459,9 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Timex Easy Reader Lamp",
     imgUrl: productImg20,
-    category: "watch",
+    category: "Lamp",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -482,9 +482,9 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Rolex Lamp",
     imgUrl: productImg21,
-    category: "watch",
+    category: "Lamp",
     price: 299,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -505,9 +505,9 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Apple Lamp",
     imgUrl: productImg22,
-    category: "watch",
+    category: "Lamp",
     price: 399,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
