@@ -16,6 +16,8 @@ import { db } from "../firebase.config";
 import { doc, getDoc } from "firebase/firestore";
 import useGetData from "../custom-hooks/useGetData";
 
+import { Link } from "react-router-dom";
+
 const ProductDetails = () => {
   const [product, setProduct] = useState({});
   const [tab, setTab] = useState("desc");
@@ -131,13 +133,9 @@ const ProductDetails = () => {
                 </div>
                 <p className="mt-3">{shortDesc}</p>
 
-                <motion.button
-                  whileTap={{ scale: 1.2 }}
-                  className="buy__btn"
-                  onClick={addToCart}
-                >
-                  Add to Cart
-                </motion.button>
+                <button className="buy__btn ">
+                  <Link to="/checkout">Buy Now</Link>
+                </button>
               </div>
             </Col>
           </Row>
