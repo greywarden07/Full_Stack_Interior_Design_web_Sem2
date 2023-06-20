@@ -70,11 +70,15 @@ const Signup = () => {
       );
 
       setLoading(false);
-      toast.success("Account created");
+      toast.success("Account created", {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
       navigate("/login");
     } catch (error) {
       setLoading(false);
-      toast.error("something went wrong");
+      toast.error("something went wrong", {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
     }
   };
 

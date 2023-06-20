@@ -58,11 +58,15 @@ const Login = () => {
 
       console.log(user);
       setLoading(false);
-      toast.success("Successfully logged in");
+      toast.success("Successfully logged in", {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
       navigate("/checkout");
     } catch (error) {
       setLoading(false);
-      toast.error(error.message);
+      toast.error(error.message, {
+        position: toast.POSITION.BOTTOM_RIGHT
+    });
     }
   };
 
