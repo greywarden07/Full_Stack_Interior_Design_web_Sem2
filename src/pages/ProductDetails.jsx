@@ -87,6 +87,9 @@ const ProductDetails = () => {
     toast.success("Product added successfully");
   };
 
+
+  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [product]);
