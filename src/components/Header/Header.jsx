@@ -40,6 +40,7 @@ const Header = () => {
   const navigate = useNavigate();
   const { currentUser } = useAuth();
 
+
   const stickyHeaderFunc = () => {
     window.addEventListener("scroll", () => {
       if (

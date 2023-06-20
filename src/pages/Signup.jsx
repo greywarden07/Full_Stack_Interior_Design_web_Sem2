@@ -15,6 +15,9 @@ import { toast } from "react-toastify";
 import "../styles/login.css";
 import { useNavigate } from "react-router-dom";
 
+
+
+
 const Signup = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
@@ -24,9 +27,13 @@ const Signup = () => {
 
   const navigate = useNavigate();
 
+  
+
   const signup = async (e) => {
     e.preventDefault();
     setLoading(true);
+
+   
 
     try {
       const userCredential = await createUserWithEmailAndPassword(
@@ -114,12 +121,18 @@ const Signup = () => {
                     <input
                       type="file"
                       onChange={(e) => setFile(e.target.files[0])}
+                      required
                     />
                   </FormGroup>
 
                   <button type="submit" className="buy__btn auth__btn">
                     Create an Account
                   </button>
+                  <div>
+                 
+                  </div>
+
+
                   <p>
                     Already have an account? <Link to="/login">Login</Link>
                   </p>

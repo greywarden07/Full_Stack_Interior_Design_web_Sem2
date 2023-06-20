@@ -5,14 +5,43 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
+import { useDispatch } from "react-redux";
+
 
 import "../styles/login.css";
+
+import {
+  GoogleAuthProvider,
+  getAuth,
+  signInWithPopup,
+  signout} from "firebase/auth";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  const auth = getAuth();
+  const dispatch = useDispatch();
+  const provider = new GoogleAuthProvider();
+  const handleGoogleLogin = (e) =>{
+    e.preventDefault();
+   signInWithPopup(auth, provider).then((result) =>{
+    const user = result.user;
+    setTimeout(() => {
+      navigate("/")
+     }, 1500);
+    console.log(user);
+   }).catch.log((error) =>{
+    console.log(error);
+
+   });
+  
+  }
+
+  
+
 
   const signIn = async (e) => {
     e.preventDefault();
@@ -37,7 +66,7 @@ const Login = () => {
     }
   };
 
-  
+
 
   return (
     <Helmet title="Login">
@@ -69,10 +98,17 @@ const Login = () => {
                       onChange={(e) => setPassword(e.target.value)}
                     />
                   </FormGroup>
-
                   <button type="submit" className="buy__btn auth__btn">
                     Login
                   </button>
+                  <div>
+                  <button type="submit" className="buy__btn auth__btn" onClick={handleGoogleLogin}>
+                 
+                 Login with Your Google Account
+               </button>
+                  </div>
+                 
+
                   <p>
                     Don't have an account?{" "}
                     <Link to="/signup">Create an account</Link>
