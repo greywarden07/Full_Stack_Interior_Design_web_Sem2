@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/cart.css";
 import Helmet from "../components/Helmet/Helmet";
 import CommonSection from "../components/UI/CommonSection";
@@ -10,11 +10,19 @@ import { useSelector, useDispatch } from "react-redux";
 
 import { Link } from "react-router-dom";
 
-
-
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
+
+  const [subtotal, setSubtotal] = useState(parseInt(totalAmount,10));
+
+  const handleIncreaseSubtotal = (amount) => {
+    setSubtotal(subtotal + parseInt(amount,10));
+  };
+
+  const handleDecreaseSubtotal = (amount) => {
+    setSubtotal(subtotal - parseInt(amount,10));
+  };
 
   return (
     <Helmet title="Cart">
@@ -34,15 +42,18 @@ const Cart = () => {
                       <th>Price</th>
                       <th>Qty</th>
                       <th>Delete</th>
-
-
-                      
+                      <th>Change Qty</th>
                     </tr>
                   </thead>
 
                   <tbody>
                     {cartItems.map((item, index) => (
-                      <Tr item={item} key={index} />
+                      <Tr
+                        item={item}
+                        key={index}
+                        handleIncreaseSubtotal={handleIncreaseSubtotal}
+                        handleDecreaseSubtotal={handleDecreaseSubtotal}
+                      />
                     ))}
                   </tbody>
                 </table>
@@ -51,16 +62,16 @@ const Cart = () => {
 
             <Col lg="3">
               <div>
-                <h6 className="d-flex align-items-center justify-content-between ">
+                <h6 className="d-flex align-items-center justify-content-between">
                   Subtotal
-                  <span className="fs-4 fw-bold">Rs {totalAmount}</span>
+                  <span className="fs-4 fw-bold">Rs {subtotal}</span>
                 </h6>
               </div>
               <p className="fs-6 mt-2">
-                taxes and shipping will calculate in checkout
+                Taxes and shipping will be calculated during checkout.
               </p>
               <div>
-                <button className="buy__btn w-100 ">
+                <button className="buy__btn w-100">
                   <Link to="/checkout">Checkout</Link>
                 </button>
                 <button className="buy__btn w-100 mt-3">
@@ -75,29 +86,53 @@ const Cart = () => {
   );
 };
 
-const Tr = ({ item }) => {
+const Tr = ({ item, handleIncreaseSubtotal, handleDecreaseSubtotal }) => {
   const dispatch = useDispatch();
 
   const deleteProduct = () => {
     dispatch(cartActions.deleteItem(item.id));
+    handleDecreaseSubtotal(item.price * item.quantity); // Decrease subtotal by item price multiplied by quantity
+    console.log( item.quantity)
+  };
+
+  const [qty, setQty] = useState(item.quantity);
+
+  const incre = () => {
+    setQty(qty + 1);
+    handleIncreaseSubtotal(item.price); // Increase subtotal by item price
+  };
+
+  const decre = () => {
+    setQty(qty - 1);
+    handleIncreaseSubtotal(item.price); // Decrease subtotal by item price
   };
 
   return (
-    <tr>
-      <td>
-        <img src={item.imgUrl} alt="" />
-      </td>
-      <td>{item.productName}</td>
-      <td>Rs {item.price}</td>
-      <td>{item.quantity}px</td>
-      <td>
-        <motion.i
-          whileTap={{ scale: 1.2 }}
-          onClick={deleteProduct}
-          class="ri-delete-bin-line"
-        ></motion.i>
-      </td>
-    </tr>
+    <>
+      <tr>
+        <td>
+          <img src={item.imgUrl} alt="" />
+        </td>
+        <td>{item.productName}</td>
+        <td>Rs {item.price}</td>
+        <td>{qty}px</td>
+        <td>
+          <motion.i
+            whileTap={{ scale: 1.2 }}
+            onClick={deleteProduct}
+            className="ri-delete-bin-line"
+          ></motion.i>
+        </td>
+        <td>
+          <button onClick={qty === 0 ? "" : decre} className="btn btn-primary mx-1">
+            -
+          </button>
+          <button onClick={incre} className="btn btn-primary mx-1">
+            +
+          </button>
+        </td>
+      </tr>
+    </>
   );
 };
 
