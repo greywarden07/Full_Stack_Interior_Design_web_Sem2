@@ -12,3 +12,7 @@ td,
 th {
   color: var(--primary-color);
 }
+.btn{
+  background-color: #0a1d37;
+  color: white;
+}

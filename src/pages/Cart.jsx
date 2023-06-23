@@ -104,7 +104,7 @@ const Tr = ({ item, handleIncreaseSubtotal, handleDecreaseSubtotal }) => {
 
   const decre = () => {
     setQty(qty - 1);
-    handleIncreaseSubtotal(item.price); // Decrease subtotal by item price
+    handleDecreaseSubtotal(item.price); // Decrease subtotal by item price
   };
 
   return (
