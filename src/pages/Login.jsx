@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../firebase.config";
 import { toast } from "react-toastify";
-import { useDispatch } from "react-redux";
+
 
 
 import "../styles/login.css";
@@ -23,7 +23,7 @@ const Login = () => {
   const navigate = useNavigate();
 
   const auth = getAuth();
-  const dispatch = useDispatch();
+ 
   const provider = new GoogleAuthProvider();
   const handleGoogleLogin = (e) =>{
     e.preventDefault();
