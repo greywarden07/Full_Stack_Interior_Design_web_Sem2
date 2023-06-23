@@ -29,7 +29,7 @@ const Cart = () => {
                 <table className="table bordered">
                   <thead>
                     <tr>
-                      <th>Image</th>
+                      <th>Image </th>
                       <th>Title</th>
                       <th>Price</th>
                       <th>Qty</th>
