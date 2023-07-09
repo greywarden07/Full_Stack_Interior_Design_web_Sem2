@@ -82,9 +82,6 @@ const Header = () => {
           <div className="nav__wrapper">
             <div className="logo">
               <img src={logo} alt="logo" />
-              <div>
-                <h1>IKEA</h1>
-              </div>
             </div>
 
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
