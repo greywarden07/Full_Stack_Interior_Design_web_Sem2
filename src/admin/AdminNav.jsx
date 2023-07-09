@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
+import logo from "../assets/images/eco-logo.png";
 
 import useAuth from "../custom-hooks/useAuth";
 import "../styles/admin-nav.css";
@@ -36,7 +37,7 @@ const AdminNav = () => {
           <Container>
             <div className="admin__nav-wrapper-top">
               <div className="logo">
-                <img ></img>
+                <img src={ logo }></img>
               </div>
 
               <div className="search__box">
