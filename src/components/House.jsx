@@ -7,13 +7,24 @@ Source: https://sketchfab.com/3d-models/house-0241efa57bac448c8bf350b53e020bbf
 Title: house
 */
 
-import React, { useRef } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
+  const groupRef = useRef()
   const { nodes, materials } = useGLTF('/house.gltf')
+
+  useEffect(() => {
+    const rotationSpeed = -0.002 // Adjust the rotation speed as desired
+    const animate = () => {
+      groupRef.current.rotation.y += rotationSpeed
+      requestAnimationFrame(animate)
+    }
+    animate()
+  }, [])
+
   return (
-    <group {...props} dispose={null}>
+    <group ref={groupRef} {...props} dispose={null}>
       <group scale={0.0028}>
         <group rotation={[-Math.PI / 2, 0, 0]}>
           <mesh geometry={nodes['house_Material_#27_0'].geometry} material={materials.Material_27} position={[-84.199, 6.043, -650]} />
