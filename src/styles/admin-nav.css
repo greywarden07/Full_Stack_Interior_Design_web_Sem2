@@ -28,12 +28,20 @@
   column-gap: 2rem;
 }
 
+.admin__nav-wrapper-top .logo img{
+  width: 100px;
+  height: 50px;
+  border-radius: 7%;
+}
 .admin__nav-wrapper-top .search__box {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.admin__nav-wrapper-top .search__box input{
+  border-radius: 5px;
+}
 .admin__nav-top-right span i {
   color: whitesmoke;
   cursor: pointer;

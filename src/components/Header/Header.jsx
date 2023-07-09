@@ -80,12 +80,11 @@ const Header = () => {
         
         <Row>
           <div className="nav__wrapper">
+          <Link to="/home">
             <div className="logo">
-              <img src={logo} alt="logo" />
-              <div>
-                <h1>IKEA</h1>
-              </div>
+              <img src={logo} alt="IKEA" />
             </div>
+          </Link>
 
             <div className="navigation" ref={menuRef} onClick={menuToggle}>
               <motion.ul className="menu">

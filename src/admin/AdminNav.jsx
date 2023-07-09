@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Row } from "reactstrap";
+import logo from "../assets/images/eco-logo.png";
+
+import {Link} from 'react-router-dom';
 
 import useAuth from "../custom-hooks/useAuth";
 import "../styles/admin-nav.css";
@@ -35,9 +38,11 @@ const AdminNav = () => {
         <div className="admin__nav-top">
           <Container>
             <div className="admin__nav-wrapper-top">
+            <Link to="/home">
               <div className="logo">
-                <img ></img>
+                <img src={ logo }></img>
               </div>
+            </Link>
 
               <div className="search__box">
                 <input type="text" placeholder="Search...." />
