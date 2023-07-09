@@ -36,7 +36,7 @@ const AdminNav = () => {
           <Container>
             <div className="admin__nav-wrapper-top">
               <div className="logo">
-                <h2>Multimart</h2>
+                <img ></img>
               </div>
 
               <div className="search__box">
