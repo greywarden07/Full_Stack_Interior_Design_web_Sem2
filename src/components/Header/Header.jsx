@@ -83,7 +83,7 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="logo" />
               <div>
-                <h1>Multimart</h1>
+                <h1>IKEA</h1>
               </div>
             </div>
 
