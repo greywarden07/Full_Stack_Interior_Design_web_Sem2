@@ -1,72 +1,113 @@
-Link-> https://ikeaiiitl.vercel.app/home
+# Full Stack Interior Design Web Application
 
-# Getting Started with Create React App
+A comprehensive full-stack web application for interior design services, built as a semester 2 project. This application provides a complete platform for browsing furniture, interior design inspiration, and managing design projects.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🌐 Live Demo
 
-## Available Scripts
+Visit the live application: [https://ikeaiiitl.vercel.app/home](https://ikeaiiitl.vercel.app/home)
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Interactive Design Gallery**: Browse through various interior design styles and furniture collections
+- **Full-Stack Architecture**: Complete frontend and backend implementation
+- **Responsive Design**: Optimized for desktop and mobile devices
+- **Modern UI/UX**: Clean and intuitive user interface
+- **Dynamic Content**: Real-time updates and interactive elements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Technology Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: JavaScript (84.3%), HTML (2.5%), CSS (13.2%)
+- **Deployment**: Vercel
+- **Version Control**: Git & GitHub
 
-### `npm test`
+## 📂 Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Full_Stack_Interior_Design_web_Sem2/
+├── frontend/           # Frontend application files
+├── backend/           # Backend server files
+├── assets/            # Images, icons, and static files
+├── styles/            # CSS stylesheets
+├── scripts/           # JavaScript files
+└── docs/              # Documentation files
+```
 
-### `npm run build`
+## 🏃‍♂️ Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or higher)
+- npm or yarn package manager
+- Modern web browser
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/greywarden07/Full_Stack_Interior_Design_web_Sem2.git
+   cd Full_Stack_Interior_Design_web_Sem2
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. **Open your browser**
+   Navigate to `http://localhost:3000` to view the application
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📱 Usage
 
-## Learn More
+1. **Browse Designs**: Explore various interior design categories and styles
+2. **View Products**: Check out furniture and decoration items
+3. **Interactive Features**: Use the application's interactive elements to customize views
+4. **Responsive Experience**: Access the application on any device
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🎯 Project Goals
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project was developed as part of a semester 2 coursework with the following objectives:
 
-### Code Splitting
+- Implement a full-stack web application from scratch
+- Practice modern web development technologies
+- Create a user-friendly interface for interior design services
+- Deploy a production-ready application
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🤝 Contributing
 
-### Analyzing the Bundle Size
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📄 License
 
-### Making a Progressive Web App
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 👤 Author
 
-### Advanced Configuration
+**greywarden07**
+- GitHub: [@greywarden07](https://github.com/greywarden07)
+- Project Link: [https://github.com/greywarden07/Full_Stack_Interior_Design_web_Sem2](https://github.com/greywarden07/Full_Stack_Interior_Design_web_Sem2)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🙏 Acknowledgments
 
-### Deployment
+- Thanks to the semester 2 course instructors
+- Interior design inspiration from various online sources
+- Open source community for tools and libraries used
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📊 Project Stats
 
-### `npm run build` fails to minify
+- **Language Distribution**: JavaScript (84.3%), CSS (13.2%), HTML (2.5%)
+- **Repository Size**: ~148 MB
+- **Created**: June 16, 2023
+- **Last Updated**: August 7, 2024
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+⭐ If you found this project helpful, please give it a star!
